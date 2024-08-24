@@ -12,14 +12,12 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
-}
-
-.profile-image {
-  background: rebeccapurple;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* margin-right: 0;
+  margin-left: auto; */
 }
 
 .logo {
@@ -27,7 +25,43 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  padding-right: 8px;
+  /* flex: 0; */
 }
+
+ul {
+  list-style-type: none;
+  /* flex: 0; */
+  display: flex;
+  /* flex-flow: row nowrap; */
+  padding: 0;
+  margin: 0;
+  min-width: fit-content;
+}
+
+li {
+  padding: 8px;
+  /* flex-flow: row nowrap; */
+}
+
+a {
+  /* this removes the line under our links */
+  text-decoration: none;
+  color: rebeccapurple;
+}
+
+.pro-button {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  /* width: 10000px; */
+  /* padding: 0 8px; */
+  /* padding-left: auto; */
+  /* margin-right: 0;
+  margin-left: auto; */
+}
+
+
 
 button {
   border: none;
@@ -37,12 +71,13 @@ button {
   padding: 8px 24px;
 }
 
-a {
-  /* this removes the line under our links */
-  text-decoration: none;
-  color: rebeccapurple;
-}
-
-ul {
-  list-style-type: none;
+.profile-image {
+  background: rebeccapurple;
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  /* padding: 0 8px; */
+  margin: 8px;
+  flex-shrink: 0;
 }
