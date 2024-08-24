@@ -1,6 +1,12 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  /* margin: 0; */
+  /* padding: 0 6px; */
+  /* border: 0; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .logo {
@@ -8,18 +14,64 @@
   font-weight: 900;
   color: tomato;
   background: white;
-  padding: 4px 32px;
+  padding: 4px 16px;
+  margin: 8px 0;
+  /* justify-content: center; */
+  /* flex: 0; */
+  /* box-sizing: content-box; */
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex; /* CHECK */
+  /* margin: 0; */
+  padding: 0; /*IMPORTANT!*/
+  /* border: 0; */
+  /* box-sizing: border-box; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+li {
+  margin: 0 6px;
+  /* display: flex; */
+}
+
+.left-links {
+  flex: 1; /* CHECK */
+  display: flex; /* CHECK */
+  /* flex-wrap: nowrap; */
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
+  /* padding-left: 0;
+  padding-right: auto; */
+  /* align-items: center; */
+  /* flex-direction: row; */
+  justify-content: flex-start; /* CHECK */
+  /* align-items: center; */
+}
+
+.right-links {
+  /* justify-self: flex-end; */
+  flex: 1; /* CHECK */
+  display: flex; /* CHECK */
+  /* flex-wrap: nowrap; */
+  /* flex-direction: row; */
+  /* justify-self: flex-end; */
+  /* align-items: center; */
+  /* margin-right: 0; */
+  /* margin-left: auto; */
+  /* padding-left: auto; */
+  justify-content: flex-end; /* CHECK */
+  /* align-items: center; */
+  /* padding: 0 0 0 auto; */
 }
 
 a {
   font-size: 22px;
   background: white;
-  padding: 8px;
+  padding: 8px;  /* CHECK */
   /* this removes the line under the links */
   text-decoration: none;
 }
